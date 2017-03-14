@@ -3,7 +3,7 @@ import datetime
 
  
 def hello(request): 
-    return HttpResponse("Hello  x world") 
+    return HttpResponse("Hello  xx world") 
 
 def current_datetime(request):
      now = datetime.datetime.now()
