@@ -25,7 +25,7 @@ SECRET_KEY = 'ciw5png2c2sa15yr98eowrsg*7i-p=uv5df5n1^^b8!3_!epo-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["ec2-52-26-155-210.us-west-2.compute.amazonaws.com"]
+ALLOWED_HOSTS = ["localhost"]
 
 
 # Application definition
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'firstsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'firstsite/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -103,7 +103,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'nb-NO'
 
 TIME_ZONE = 'UTC'
 
