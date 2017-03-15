@@ -9,7 +9,7 @@ def index(request):
 	return HttpResponse(html) 
 
 def hello(request): 
-    return HttpResponse("Hello  xx world") 
+    return HttpResponse("Hello  xxx world") 
 
 def current_datetime(request):
 	now = datetime.datetime.now()
